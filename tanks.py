@@ -467,7 +467,7 @@ def game_intro():
 
         clock.tick(15)
 
-#---------------------------function for game Over screen------------------------------------------------------
+
 def game_over():
     game_over = True
 
@@ -514,7 +514,7 @@ def you_win():
         clock.tick(15)
 
 
-def health_bars(player_health, enemy_health):
+def hp(player_health, enemy_health):
     if player_health > 75:
         player_health_color = green
     elif player_health > 50:
@@ -618,7 +618,7 @@ def gameLoop():
                                 enemyTankX -= 5
 
                             gameDisplay.fill(black)
-                            health_bars(player_health, enemy_health)
+                            hp(player_health, enemy_health)
                             gun = tank(mainTankX, mainTankY, currentTurPos)
                             enemy_gun = enemy_tank(enemyTankX, enemyTankY, 8)
                             fire_power += power_change
@@ -664,7 +664,7 @@ def gameLoop():
             mainTankX += 5
 
         gameDisplay.fill(black)
-        health_bars(player_health, enemy_health)
+        hp(player_health, enemy_health)
         gun = tank(mainTankX, mainTankY, currentTurPos)
         enemy_gun = enemy_tank(enemyTankX, enemyTankY, 8)
 
