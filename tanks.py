@@ -13,7 +13,7 @@ gameDisplay = pygame.display.set_mode((display_width, display_height))
 
 
 
-pygame.display.set_caption('Tanks - Amar')
+pygame.display.set_caption('Tanchiki')
 
 icon = pygame.image.load("icont.png")
 pygame.display.set_icon(icon)
