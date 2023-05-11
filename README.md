@@ -1,1 +1,1 @@
-# pygame-tankgame
+Solo gameplay against bot
